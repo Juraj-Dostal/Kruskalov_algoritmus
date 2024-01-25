@@ -1,18 +1,22 @@
-2. Kruskalov algoritmus II.na hľadanie najlacnejšej kostry súvislého hranovo ohodnoteného grafu G = (V, H, c).
+*Kruskalov algoritmus II.**
+_____________________________________
 
-Program bude obsahovať:
-načítanie grafu zo súboru, !!done
-usporiadanie poľa hrán podľa ceny, !!done
-hľadanie najlacnejšej kostry (hrany kostry ukladajte do poľa), !!done
-výpis poľa hrán najlacnejšej kostry, !!done
-výpis ceny najlacnejšej kostry. !!done
+Kruskalov algoritmus II. na hľadanie najlacnejšej kostry súvislého hranovo ohodnoteného grafu.
 
-Program otestujte na dátovom súbore pr3.hrn, ktorý nájdete tu:https://frcatel.fri.uniza.sk/users/paluch/zadanie3.html
-POZOR! Každá hrana {u, v} je vo vstupnom súbore uvedená len raz, a preto počet vrcholov je maximum čísel
-z prvého a druhého stĺpca vstupného súboru (t.j. treba počítať maximum z oboch stĺpcov!!)
+________________________________________
+**Popis fungovania algoritmu**:
+- Krok 1. Zoraď hrany podľa ich ohodnotenia vzostupne (zostupne) do postupnosti P.
+- Krok 2. Pre každý vrchol i Є V polož k(i) = i . //k-komponent
+- Krok 3. Nech prvá hrana v postupnosti P je hrana {u, v}. Vylúč hranu {u, v} z postupnosti P. Ak
+k(u) != k(v), zaraď hranu {u, v} do kostry, vypočítaj kmin = min(k(u), k(v)), kmax = max(k(u),
+k(v)), a i Є V , pre ktoré k(i) = kmax, polož k(i) == kmin.
+- Krok 4. Ak je počet vybraných hrán rovný |V| − 1 alebo ak je postupnosť P prázdna, STOP.
+Inak GOTO krok 3
+________________________________________
+**Ako spustiť**:
 
-Súbor s programom (bez komentárov) odovzdajte na moodle do aktivity Kruskal – Borčinová.
+Ku algoritmu sú dostupné aj vstupné údaje(grafy). V main class stači premenovať názov vstupného súboru a spustiť.
 
-Dátové súbory neodovzdávajte!!!
-
-Termín odovzdania:  23. 4. 2023
+________________________________________
+Tento algoritmus som programoval na predmet Algoritmická teória grafov.
+Ma slúžiť na inspiráciu a odkontrolovanie si vysledkov.
