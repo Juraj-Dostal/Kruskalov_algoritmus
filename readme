@@ -1,0 +1,18 @@
+2. Kruskalov algoritmus II.na hľadanie najlacnejšej kostry súvislého hranovo ohodnoteného grafu G = (V, H, c).
+
+Program bude obsahovať:
+načítanie grafu zo súboru, !!done
+usporiadanie poľa hrán podľa ceny, !!done
+hľadanie najlacnejšej kostry (hrany kostry ukladajte do poľa), !!done
+výpis poľa hrán najlacnejšej kostry, !!done
+výpis ceny najlacnejšej kostry. !!done
+
+Program otestujte na dátovom súbore pr3.hrn, ktorý nájdete tu:https://frcatel.fri.uniza.sk/users/paluch/zadanie3.html
+POZOR! Každá hrana {u, v} je vo vstupnom súbore uvedená len raz, a preto počet vrcholov je maximum čísel
+z prvého a druhého stĺpca vstupného súboru (t.j. treba počítať maximum z oboch stĺpcov!!)
+
+Súbor s programom (bez komentárov) odovzdajte na moodle do aktivity Kruskal – Borčinová.
+
+Dátové súbory neodovzdávajte!!!
+
+Termín odovzdania:  23. 4. 2023
