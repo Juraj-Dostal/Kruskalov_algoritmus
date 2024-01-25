@@ -1,8 +1,7 @@
-*Kruskalov algoritmus II.**
+**Kruskalov algoritmus II.**
 _____________________________________
 
 Kruskalov algoritmus II. na hľadanie najlacnejšej kostry súvislého hranovo ohodnoteného grafu.
-
 ________________________________________
 **Popis fungovania algoritmu**:
 - Krok 1. Zoraď hrany podľa ich ohodnotenia vzostupne (zostupne) do postupnosti P.
